@@ -1,0 +1,12 @@
+def emailslicer(a):
+    if "@" not in (a):
+        print("pleas enter valid email")
+    else:
+        b=a.find("@")
+        return(b)
+a=input("enter the email address: ")
+print("index position of @ is",emailslicer(a))
+h=((a[(emailslicer(a))+1:]))
+j=(a[:emailslicer(a)])
+s=h.upper()
+print(f"user: {j}  address: {s}")
